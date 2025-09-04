@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.botonSuscribirse {
+    background-color: #6a0dad;
+    border-radius: 4px;
+}
+
+.botonSuscribirs:hover {
+    background-color: #2a0250;
+    color: white;
+}
+
+@media (max-width: 374px) {
+    .nabvarLogotipo {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .botonSuscribirse {
+        display: none;
+    }
+}
+
+.nav-link:hover {
+    color: #9602f9 !important;
+    transition: color 0.3s ease;
+}
