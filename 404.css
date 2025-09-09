@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.botonSuscribirse {
+    background-color: #6a0dad;
+    border-radius: 4px;
+}
+
+.botonSuscribirs:hover {
+    background-color: #2a0250;
+    color: white;
+}
+
+body {
+    background-color: #9602f9;
+}
+
+.gif {
+    width: 500px;
+    height: 500px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto404 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 770px) {
+    .gif {
+        display: none;
+    }
+}
+
+@media (max-width: 374px) {
+    .nabvarLogotipo {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .botonSuscribirse {
+        display: none;
+    }
+}
+
+.nav-link:hover {
+    color: #9602f9 !important;
+    transition: color 0.3s ease;
+}
