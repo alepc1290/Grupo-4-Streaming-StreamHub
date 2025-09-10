@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+main{
+    height: 75vh;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav > img{
+width:  30vh;
+height: 15vh;
+}
+.RegistroContainer{
+    display: flex;
+    justify-content: center;
+   
+
+}
+.Registro{
+    width: 50vh;
+    height: 74vh;
+    border-radius: 5px;
+    border: 3px solid blueviolet;
+}
+@media (max-width: 1250px) {
+    nav {
+        padding: 15px;
+    }
+}
+@media (max-width: 950px) {
+    nav > img {
+        height: 30px;
+    }
+}
+h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+}
+label{
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  
+}
+
+#FechaDeNacimiento {
+    width: 100%;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    border: 3px solid blueviolet;
+    border-radius: 7px;
+}
+button{
+   display: flex;
+   justify-content: center;
+    width: 30vh;
+    padding: 3px;
+    border: 2px solid blueviolet;
+    border-radius:7px; 
+    
+}
+button:hover{
+    background-color: blueviolet;
+}
+
+h6{
+    color: white;
+   
+   display: flex;
+    justify-content: center;
+    padding: 10px;
+} 
+a{
+    color: white;
+   
+}
