@@ -4,14 +4,89 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    background-color: black;
+}
+/*---NAVBAR---*/
 .botonSuscribirse {
     background-color: #6a0dad;
     border-radius: 4px;
 }
 
-.botonSuscribirs:hover {
+.botonSuscribirse:hover {
     background-color: #2a0250;
     color: white;
+}
+
+
+.nav-link:hover {
+    color: #9602f9 !important;
+    transition: color 0.3s ease;
+}
+
+/* ---MAIN--- */
+.contenedorMayor{
+    background: linear-gradient(#6a0dad, #2a0250, #2a0250, #6a0dad);
+    display: flex;
+    justify-content: space-between;
+}
+.contenedorFlex {
+    margin-top: 50px;
+    height: 60vh;
+    width: 30%;
+}
+
+.texto {
+    color: white;
+    text-align: center;
+}
+
+.botonLink {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton1 {
+    background-color: #921de6;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.boton1:hover {
+    background-color: #6a0dad;
+}
+
+.boton2:hover {
+    background-color: #6a0dad;
+}
+
+.boton2 {
+    color: white;
+    background-color: #921de6;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+.imagen{
+    box-shadow: 400px 40px 0px 0px black inset;
+    max-width: 50%;
+}
+.card{
+    margin: 10%;
+    border: solid rgb(37, 37, 37);
+}
+.card-body{
+    background-color: rgb(23, 23, 23);
+}
+a{
+    text-decoration: none;
+}
+@media (max-width: 465px){
+    section{
+        margin: 0;
+    }
 }
 
 @media (max-width: 374px) {
@@ -24,9 +99,4 @@
     .botonSuscribirse {
         display: none;
     }
-}
-
-.nav-link:hover {
-    color: #9602f9 !important;
-    transition: color 0.3s ease;
 }
