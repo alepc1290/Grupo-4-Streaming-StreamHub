@@ -100,3 +100,55 @@ a{
         display: none;
     }
 }
+
+footer {
+    height: 200px;
+    background-color: rgb(34, 33, 33);
+}
+
+.contenedorImg {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 70px;
+}
+
+.linkError404 {
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.linkError404:hover {
+    color: #9602f9 !important;
+    transition: color 0.3s ease;
+}
+
+.contenedorLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.logoApp {
+    height: 40px;
+    border: 3px solid transparent;
+    padding: 5px;
+}
+
+.logoApp:hover {
+    border: 3px solid #9602f9;
+    border-radius: 3px;
+    transition: color 0.3s ease;
+}
+
+.contenedorLogos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 25px;
+}
