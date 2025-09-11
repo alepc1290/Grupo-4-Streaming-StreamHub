@@ -8,6 +8,7 @@ body {
     height: 100vh;
     background-color: black;
 }
+
 /*---NAVBAR---*/
 .botonSuscribirse {
     background-color: #6a0dad;
@@ -26,20 +27,37 @@ body {
 }
 
 /* ---MAIN--- */
-.contenedorMayor{
-    background: linear-gradient(#6a0dad, #2a0250, #2a0250, #6a0dad);
+.contenedorMayor {
+    position: relative;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    background: url("./IMG/PV_About_Amazon_Blog_Image_1.jpg") no-repeat center center/cover;
 }
-.contenedorFlex {
-    margin-top: 50px;
-    height: 60vh;
-    width: 30%;
+
+/* Capa oscura encima del fondo */
+.contenedorMayor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.69);
+    z-index: 1;
+}
+
+section {
+    position: relative;
+    z-index: 2;
+    margin: 50px;
+    color: white;
 }
 
 .texto {
     color: white;
     text-align: center;
+    font-size: 30px;
 }
 
 .botonLink {
@@ -48,49 +66,107 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.boton1 {
+.botonInicioSesion {
     background-color: #921de6;
     color: white;
     padding: 10px 30px;
     border-radius: 20px;
 }
 
-.boton1:hover {
+.botonInicioSesion:hover {
     background-color: #6a0dad;
 }
 
-.boton2:hover {
-    background-color: #6a0dad;
-}
 
-.boton2 {
+.botonPrueba {
     color: white;
     background-color: #921de6;
     border-radius: 20px;
     padding: 10px 40px;
 }
-.imagen{
-    box-shadow: 400px 40px 0px 0px black inset;
-    max-width: 50%;
+
+.botonPrueba:hover {
+    background-color: #6a0dad;
 }
-.card{
-    margin: 10%;
+
+.card {
+    margin: 20%;
     border: solid rgb(37, 37, 37);
+    transition: 1s ease;
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
-.card-body{
+
+.card:hover {
+    filter: drop-shadow(0 0 2rem crimson);
+    margin: 18%;
+}
+
+.card-body {
     background-color: rgb(23, 23, 23);
 }
-a{
+
+a {
     text-decoration: none;
 }
-@media (max-width: 465px){
-    section{
-        margin: 0;
+
+.dimensionCarrusel {
+    margin: 10%;
+}
+.dimensionCarrusel h1{
+    color: white;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-inner h1{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contenedorMayor {
+        background: url("./IMG/PV_About_Amazon_Blog_Image_1.jpg") center/cover no-repeat;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorMayor::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.69);
+        z-index: 1;
+    }
+
+    section {
+        width: 100%;
+        margin: 100px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 465px) {
+    .contenedorMayor{
+        
     }
 }
 
 @media (max-width: 374px) {
-    .nabvarLogotipo {
+    .navbarLogotipo {
         display: none;
     }
 }
