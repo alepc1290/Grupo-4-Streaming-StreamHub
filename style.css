@@ -159,13 +159,6 @@ a {
     }
 }
 
-
-@media (max-width: 465px) {
-    .contenedorMayor{
-        
-    }
-}
-
 @media (max-width: 374px) {
     .navbarLogotipo {
         display: none;
