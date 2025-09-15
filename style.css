@@ -112,8 +112,10 @@ a {
 
 .dimensionCarrusel {
     margin: 10%;
+    color: white;
 }
-.dimensionCarrusel h1{
+
+.carousel-inner {
     color: white;
 }
 
@@ -122,9 +124,6 @@ a {
     height: 600px;
     object-fit: cover;
     object-position: center;
-}
-.carousel-inner h1{
-    color: white;
 }
 
 @media (max-width: 768px) {
@@ -157,6 +156,11 @@ a {
     .carousel-inner img {
         height: 300px;
     }
+}
+
+
+@media (max-width: 465px) {
+    .texto {}
 }
 
 @media (max-width: 374px) {
