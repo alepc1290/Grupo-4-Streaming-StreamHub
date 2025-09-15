@@ -132,6 +132,7 @@ footer {
     justify-content: center;
     margin-top: 15px;
     gap: 20px;
+    text-decoration: none;
 }
 
 .logoApp {
