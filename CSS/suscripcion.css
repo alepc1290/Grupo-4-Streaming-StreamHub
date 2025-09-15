@@ -183,7 +183,6 @@ select {
 
 
 
-/*  tablets y menores a 992px */
 @media (max-width: 992px) {
     .Planes {
         flex-direction: column;
@@ -193,8 +192,9 @@ select {
     .planBasico,
     .planEstandar,
     .planPlatino {
-        width: 80%;
-        max-width: 400px;
+        width: 90%;   /* O 100% para ocupar todo */
+        max-width: 500px; /* opcional: límite para que no sea demasiado ancho */
+        height: auto; /* que se adapte al contenido */
     }
 
     .suscripContainer {
@@ -208,8 +208,15 @@ select {
     }
 }
 
-/* Telefonos (576px o menos) */
+/* Teléfonos (576px o menos) */
 @media (max-width: 576px) {
+    .planBasico,
+    .planEstandar,
+    .planPlatino {
+        width: 100%;   /* full ancho en móviles */
+        max-width: none; 
+    }
+
     nav img {
         height: 50px;
     }
@@ -237,37 +244,5 @@ select {
 
     form {
         padding: 15px;
-    }
-}
-
-/*  Compu (1200px o más) */
-@media (min-width: 1200px) {
-    .container-fluid {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .Planes {
-        justify-content: space-between;
-        gap: 40px;
-    }
-
-    .planBasico,
-    .planEstandar,
-    .planPlatino {
-        width: 300px;
-        height: 320px;
-    }
-
-    .suscripContainer {
-        justify-content: center;
-    }
-
-    form {
-        width: 400px;
-    }
-
-    nav img {
-        height: 80px;
     }
 }
