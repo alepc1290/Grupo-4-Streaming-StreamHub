@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+    }
+
+.botonSuscribirse {
+    background-color: #6a0dad;
+    border-radius: 4px;
+}
+
+.botonSuscribirse:hover {
+    background-color: #2a0250;
+    color: white;
+}
+
+.imagen {
+    position: relative;
+    min-height: 100vh;
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 60%),
+        url("https://m.media-amazon.com/images/S/pv-target-images/bcdb2826ad804e11b123d6e4c46c40d02e9d54330f968b0e34a349deec82e3bd._SX1080_FMjpg_.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+}
+
+.contenido {
+    max-width: 100vw;
+}
+
+.contenido img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.botones {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.botones a,
+span {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-blanco {
+    background-color: white;
+    color: black;
+}
+
+.btn-negro {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.movie-card {
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.movie-card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fdd835;
+}
+
+.movie-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.movie-card strong {
+    color: #fbc02d;
+}
+footer {
+    width: 100vw;
+    background-color: rgb(21, 20, 20);
+    padding: 20px 0;
+}
+
+.contenedorImg {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 70px;
+}
+
+.linkError404 {
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.linkError404:hover {
+    color: #9602f9 !important;
+    transition: color 0.3s ease;
+}
+
+.contenedorLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.logoApp {
+    height: 40px;
+    border: 3px solid transparent;
+    padding: 5px;
+}
+
+.logoApp:hover {
+    border: 3px solid #9602f9;
+    border-radius: 3px;
+    transition: color 0.3s ease;
+}
+
+.contenedorLogos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+    .movie-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .movie-card p {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 991px) {
+    .botonSuscribirse {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenido{
+
+    }
+    body {
+        padding: 15px;
+    }
+
+    .movie-card {
+        padding: 18px;
+    }
+
+    .movie-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .movie-card p {
+        font-size: 0.9rem;
+    }
+    .botones{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 425px) {
+    .movie-card {
+        padding: 15px;
+    }
+
+    .movie-card h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .movie-card p {
+        font-size: 0.85rem;
+        text-align: justify;
+    }
+    footer {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .movie-card {
+        padding: 12px;
+    }
+
+    .movie-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .movie-card p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .movie-card {
+        padding: 10px;
+    }
+
+    .movie-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .movie-card p {
+        font-size: 0.75rem;
+    }
+    footer {
+        padding: 15px;
+    }
+}

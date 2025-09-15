@@ -5,10 +5,15 @@
 }
 
 body {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: black;
 }
 
+main {
+    flex: 1;
+}
 
 /*---NAVBAR---*/
 .botonSuscribirse {
@@ -28,12 +33,11 @@ body {
 }
 
 /* ---MAIN--- */
+
 .contenedorMayor {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url("./IMG/PV_About_Amazon_Blog_Image_1.jpg") no-repeat center center/cover;
+    min-height: 100%;
+    padding: 60px 0;
+    background: url("./IMG/portada.jpg") no-repeat center center/cover;
 }
 
 /* Capa oscura encima del fondo */
@@ -49,6 +53,9 @@ body {
 }
 
 section {
+    margin: 50px auto;
+    padding: 0 20px;
+    max-width: 1200px;
     position: relative;
     z-index: 2;
     margin: 50px;
@@ -126,59 +133,10 @@ a {
     object-position: center;
 }
 
-@media (max-width: 768px) {
-    .contenedorMayor {
-        background: url("./IMG/PV_About_Amazon_Blog_Image_1.jpg") center/cover no-repeat;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contenedorMayor::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.69);
-        z-index: 1;
-    }
-
-    section {
-        width: 100%;
-        margin: 100px;
-        text-align: center;
-        position: relative;
-        z-index: 2;
-        color: white;
-    }
-
-    .carousel-inner img {
-        height: 300px;
-    }
-}
-
-
-@media (max-width: 465px) {
-    .texto {}
-}
-
-@media (max-width: 374px) {
-    .navbarLogotipo {
-        display: none;
-    }
-}
-
-@media (max-width: 991px) {
-    .botonSuscribirse {
-        display: none;
-    }
-}
-
 /* footer */
 footer {
-    height: 200px;
-    background-color: rgb(34, 33, 33);
+    width: 100vh;
+    background-color: rgb(21, 20, 20);
 }
 
 .contenedorImg {
@@ -224,8 +182,8 @@ footer {
 .contenedorLogos {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     gap: 25px;
+    margin: 0;
 }
 
 /* intro */
@@ -242,13 +200,118 @@ footer {
     z-index: 9999;
     animation: fadeOut 1s ease forwards;
     animation-delay: 3s;
-    /* tiempo visible */
 }
 
 .logo img {
     width: 220px;
     animation: zoom 2s ease forwards;
 }
+
+#contenido {
+    opacity: 0;
+    animation: showContent 1s ease forwards;
+    animation-delay: 3.5s;
+}
+
+@media (max-width: 991px) {
+    .botonSuscribirse {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedorMayor {
+        background: url("./IMG/portada.jpg") center/cover no-repeat;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .contenedorMayor::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.69);
+        z-index: 1;
+    }
+
+    section {
+        margin: 60px 0;
+        padding: 0 16px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 465px) {
+    .contenedorMayor {
+        background: black !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .texto {
+        font-size: 20px;
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contenedorLinks,
+    .contenedorLogos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 374px) {
+    .navbarLogotipo {
+        display: none;
+    }
+
+    .texto {
+        font-size: 18px;
+        max-width: 95%;
+    }
+
+    .logoApp {
+        height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .texto {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+
+
 
 @keyframes zoom {
     0% {
@@ -274,13 +337,6 @@ footer {
     }
 }
 
-/* Contenido de la página */
-#contenido {
-    opacity: 0;
-    animation: showContent 1s ease forwards;
-    animation-delay: 3.5s;
-    /* aparece después del splash */
-}
 
 @keyframes showContent {
     to {
