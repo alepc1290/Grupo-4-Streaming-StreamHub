@@ -214,6 +214,11 @@ footer {
     animation-delay: 3.5s;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 991px) {
     .botonSuscribirse {
         display: none;
