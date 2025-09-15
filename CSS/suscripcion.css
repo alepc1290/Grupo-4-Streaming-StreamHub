@@ -196,8 +196,9 @@ select {
     .planBasico,
     .planEstandar,
     .planPlatino {
-        width: 80%;
-        max-width: 400px;
+        width: 90%;   /* O 100% para ocupar todo */
+        max-width: 500px; /* opcional: límite para que no sea demasiado ancho */
+        height: auto; /* que se adapte al contenido */
     }
 
     .suscripContainer {
@@ -213,6 +214,13 @@ select {
 
 /* Telefonos) */
 @media (max-width: 576px) {
+    .planBasico,
+    .planEstandar,
+    .planPlatino {
+        width: 100%;   /* full ancho en móviles */
+        max-width: none; 
+    }
+
     nav img {
         height: 50px;
     }
