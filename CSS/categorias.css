@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.botonSuscribirse {
+    background-color: #6a0dad;
+    border-radius: 4px;
+}
+
+.botonSuscribirse:hover {
+    background-color: #2a0250;
+    color: white;
+}
+
+
+.nav-link:hover {
+    color: #9602f9 !important;
+    transition: color 0.3s ease;
+}
+
+main {
+    background-color: black;
+    height: 100%;
+}
+
+
+.cuadricula {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 50px;
+    padding: 20px;
+}
+
+.texto {
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.peliculas img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.peliculas img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.categorias {
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
