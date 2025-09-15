@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.botonSuscribirse {
+    background-color: #6a0dad;
+    border-radius: 4px;
+}
+
+.botonSuscribirse:hover {
+    background-color: #2a0250;
+    color: white;
+}
+
+
+.nav-link:hover {
+    color: #9602f9 !important;
+    transition: color 0.3s ease;
+}
+
+footer {
+    height: 200px;
+    background-color: rgb(34, 33, 33);
+}
+
+.contenedorImg {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 70px;
+}
+
+.linkError404 {
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.linkError404:hover {
+    color: #9602f9 !important;
+    transition: color 0.3s ease;
+}
+
+.contenedorLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+    text-decoration: none !important;
+}
+
+.logoApp {
+    height: 40px;
+    border: 3px solid transparent;
+    padding: 5px;
+}
+
+.logoApp:hover {
+    border: 3px solid #9602f9;
+    border-radius: 3px;
+    transition: color 0.3s ease;
+}
+
+.contenedorLogos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+main {
+    background-color: #6a0dad;
+    height: 100vh;
+    height: 800px;
+}
+
+.contenedorNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 70px;
+}
+
+.img {
+    border-radius: 50px;
+    height: 250px;
+    width: 200px;
+    background-color: black;
+}
+
+.contenedorNombres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+h1,
+p {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+
+@media (max-width: 2560px) {
+    .img {
+        border-radius: 50px;
+        height: 450px;
+        width: 400px;
+        background-color: black;
+    }
+
+    .nombres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 300px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+
+    footer {
+        height: 300px;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    .linkError404 {
+        color: white;
+        border-radius: 50px;
+        padding: 5px;
+        font-size: 35px;
+    }
+
+    .logoApp {
+        height: 60px;
+        border: 3px solid transparent;
+        padding: 5px;
+    }
+
+    nav {
+        height: 150px;
+    }
+
+    .botonSuscribirse {
+        height: 70px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navLogo {
+        height: 100px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .img {
+        border-radius: 50px;
+        height: 300px;
+        width: 300px;
+        background-color: black;
+    }
+
+    .nombres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 150px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    footer {
+        height: 225px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .linkError404 {
+        color: white;
+        border-radius: 50px;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .logoApp {
+        height: 45px;
+        border: 3px solid transparent;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedorNosotros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .img {
+        border-radius: 50px;
+        height: 250px;
+        width: 250px;
+        background-color: black;
+    }
+
+    .nombres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .linkError404 {
+        color: white;
+        border-radius: 50px;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    footer {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        height: 500px;
+    }
+
+    .img {
+        border-radius: 50px;
+        height: 170px;
+        width: 200px;
+        background-color: black;
+    }
+
+    .contenedorNosotros {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .nombres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    footer {
+        height: 200px;
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+        height: 470px;
+    }
+
+    .img {
+        height: 85px;
+        width: 120px;
+        background-color: black;
+    }
+
+    .nombres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    footer {
+        height: 210px;
+    }
+
+    .linkError404 {
+        color: white;
+        border-radius: 50px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .logoApp {
+        height: 40px;
+        border: 3px solid transparent;
+        padding: 5px;
+    }
+
+    nav {
+        height: 120px;
+    }
+
+    .botonSuscribirse {
+        height: 50px;
+        width: 95px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navLogo {
+        height: 70px;
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+}
