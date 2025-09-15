@@ -102,7 +102,7 @@ input {
 
 /* Botón */
 
-.btn-continuar {
+.btn-continuar  {
     display: inline-block;
     padding: 10px 20px;
     background: #222;
@@ -114,6 +114,10 @@ input {
     
 }
 
+.btn-continuar> a{
+    color: white;
+    text-decoration: none;
+}
 .btn-continuar:hover {
     background: #ac05ee;
 

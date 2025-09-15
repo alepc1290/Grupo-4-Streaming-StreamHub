@@ -175,6 +175,10 @@ select {
     transition: ease 0.6s;
     border: 3px solid blueviolet;
 }
+.btn-continuar> a{
+    color: white;
+    text-decoration: none;
+}
 
 .btn-continuar:hover {
     background: #ac05ee;
