@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -10,9 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: black;
+    background: linear-gradient(50deg, blueviolet, black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 nav {
     display: flex;
@@ -20,74 +19,69 @@ nav {
     align-items: center;
     height: 60px;
     width: 100%;
-    background-color: #000000;
 }
 
 nav img {
-    height: 40px;
+    height: 65px;
 }
 
-
-main { 
-    height: 100vh;
+main {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-    
+
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 
 .LoginContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;              
-    max-width: 350px;        
-    min-width: 260px;        
+    width: 100%;
+    max-width: 600px;
+    min-width: 260px;
     padding: 20px;
     border-radius: 6px;
+    background-color: #171717;
     border: 3px solid blueviolet;
-    background-color: #111;  
 }
-    
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
-    gap: 8px;
+    gap: 12px;
 }
 
-
-h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2 {
     color: white;
     width: 100%;
     height: 40px;
-    
+    text-align: center;
+    text-decoration: underline;
 }
 
-
 label {
-    display: flex;
-    align-items: center;
     width: 100%;
-    height: 20px;
-    padding-bottom: 1px;
     font-size: 18px;
     color: white;
 }
 
-
-input {
-    display: flex;
-    align-items: center;
+input[type="email"],
+input[type="password"] {
     width: 100%;
-    height: 35px; 
+    height: 35px;
     padding: 6px 10px;
     border: 2px solid blueviolet;
     border-radius: 6px;
@@ -96,25 +90,45 @@ input {
 }
 
 
-button {
+.Check {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.box {
+    width: 12px;
+    height: 12px;
+    align-self: flex-start;
+}
+
+/* Botón */
+
+.btn-continuar {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 17px;
+    transition: ease 0.6s;
+    border: 3px solid blueviolet;
+    
+}
+
+.btn-continuar:hover {
+    background: #ac05ee;
+
+}
+
+.Espacio {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;  
-    height: 40px; 
-    border-radius: 10px;
-    border: 2px solid blueviolet;
-    background: #222;
     color: white;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-button:hover {
-    background-color: blueviolet;
-    
-}
-.Espacio{
-    color: white;
+    height: 20px;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
 }
 
 
@@ -123,50 +137,70 @@ button:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20px;
     color: white;
     padding-top: 5px;
+
 }
+
 .Prim a {
-    
     color: #7b00ff;
+    margin-left: 5px;
 }
+
 .Prim a:hover {
     text-decoration: underline;
 }
 
-
-@media (min-width: 768px) {
+/*Compu */
+@media (min-width: 1200px) {
     .LoginContainer {
-        max-width: 400px;
+        max-width: 500px;
+        height: auto;
     }
-    h3 {
-        font-size: 20px;
+}
+
+/*  Tablets */
+@media (max-width: 992px) {
+    .LoginContainer {
+        width: 90%;
+        padding: 15px;
     }
+
     input {
+        width: 90%;
+        height: 32px;
+    }
+
+    button {
+        width: 90%;
+        height: 34px;
+    }
+}
+
+/* Telefonos */
+@media (max-width: 600px) {
+    .LoginContainer {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    nav img {
         height: 40px;
     }
-    button {
-        height: 45px;
-    }
-}
 
-@media (min-width: 1024px) {
-    .LoginContainer {
-        max-width: 450px;
-    }
-}
-@media (min-width: 1024px) {
-    .LoginContainer {
-        max-width: 450px;
-    }
-    h3 {
-        font-size: 22px;
-    }
-    input {
-        font-size: 16px;
-    }
-    button {
-        font-size: 16px;
+    .container-fluid {
+        padding: 5px;
     }
 }
