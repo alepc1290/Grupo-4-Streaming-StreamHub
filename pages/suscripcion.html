@@ -43,22 +43,23 @@
                 <form>
                     <h3>Suscripción</h3>
                     <label for="">Nombre</label>
-                    <input type="text" name="" id="" maxlength="15" placeholder="Ingresa Tu Nombre" required>
+                    <input type="text" name="" id="" minlength="3" maxlength="15" placeholder="Ingresa Tu Nombre" required>
                     <label for="">Apellido</label>
-                    <input type="text" name="" id="" maxlength="15" placeholder="Ingresa Tu Apellido" required>
+                    <input type="text" name="" id="" minlength="3" maxlength="15" placeholder="Ingresa Tu Apellido" required>
                     <label for="">Email</label>
                     <input type="email" name="" id="" maxlength="28" placeholder="Ingresa Tu Email" required>
                     <label for="">Contraseña</label>
-                    <input type="password" name="" id="" minlength="8" placeholder="Ingresa Tu Contraseña" required>
+                    <input type="password" name="" id="" minlength="8" maxlength="18" placeholder="Ingresa Tu Contraseña" required>
                     <label for="">Fecha De Nacimiento</label>
                     <input type="date" name="" id="" required>
                     <label for="">Elige un Plan</label>
                     <select id="" name="" required>
+                        <option value="">selecciona</option>
                         <option value="">Básico</option>
                         <option value="">Estándar</option>
                         <option value="">Platino</option>
                     </select>
-                    <a href="../404.html" class="btn-continuar">Continuar</a>
+                    <button type="submit" class="btn-continuar">Continuar</button>
                 </form>
             </div>
         </div>
